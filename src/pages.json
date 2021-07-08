@@ -1,16 +1,54 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
-			"path": "pages/index/index",
+			"path": "pages/demo",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "模板"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的"
 			}
 		}
 	],
+	// "subPackages": [{
+	// 	"root": "pages",
+	// 	"pages": [{
+	// 		"path": "child",
+	// 		"style": {
+	// 			"navigationBarTitleText": "分包子界面"
+	// 		}
+	// 	}]
+	// }],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarBackgroundColor": "#6DAE86",
 		"backgroundColor": "#F8F8F8"
+		// "usingComponents": {
+		// 	"van-button": "/wxcomponents/vant/button/index"
+		// }
+	},
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+			"^uni-(.*)": "@/components/uni-$1/uni-$1.vue" // 匹配components目录内的vue文件
+		}
 	}
+	// "tabBar": {
+	// 	"color": "#595959",
+	// 	"selectedColor": "#6DAE86",
+	// 	"borderStyle": "white",
+	// 	"backgroundColor": "#FFF",
+	// 	"list": [{
+	// 			"pagePath": "/home",
+	// 			"iconPath": "/home.png",
+	// 			"selectedIconPath": "/home-active.png",
+	// 			"text": "首页"
+	// 		}
+	// 	]
+	// }
 }

@@ -12,6 +12,14 @@
 	}
 </script>
 
-<style>
-	/*每个页面公共css */
+<style lang="scss">
+	@import "uview-ui/index.scss";
+	/* common.scss - 通用组件、模板样式库，可以当作一套ui库应用 */
+	@import './common/common.scss';
+
+	page{
+		height: 100%;
+		// opacity: 0.3;
+	}
+
 </style>

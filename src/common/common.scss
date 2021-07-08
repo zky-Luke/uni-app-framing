@@ -1,0 +1,94 @@
+/*通用 */
+body{
+	font-size:28rpx;
+}
+.uni-flex {
+	display: flex;
+	flex-direction: row;
+}
+.uni-flex-item {
+	flex: 1;
+}
+.uni-row {
+	flex-direction: row;
+}
+.uni-column {
+	flex-direction: column;
+}
+
+.uni-flex-wrap{
+	flex-wrap: wrap;
+}
+
+// 两端对齐
+.uni-flex-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+// 两侧的间隔相等
+.uni-flex-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+// 两端对齐，上下居中
+.uni-flex-between-center {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+// 两侧的间隔相等，上下居中
+.uni-flex-around-center {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+// 左对齐,上下居中
+.uni-flex-start-center {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+// 左对齐,上下居中
+.uni-flex-start-center {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+// 右对齐,上下居中
+.uni-flex-end-center {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+// 上下居左
+.uni-flex-align-start {
+	display: flex;
+	align-items: flex-start;
+}
+
+// 上下居中
+.uni-flex-align-center {
+	display: flex;
+	align-items: center;
+}
+
+
+// 容器垂直居中
+.uni-flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+// input placeholder样式
+.placeholder-class{
+	color:#9FA19F;
+	font-size: 26rpx;
+}
